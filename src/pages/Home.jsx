@@ -8,9 +8,16 @@ export default function Home() {
   const [error, setError] = useState('No Error');
 
   const handleScan = (data) => {
-    if (data && data.startsWith('artofliving://')) {
-      const [_key, slug] = data.split('artofliving://');
-      history.push('/video/' + slug);
+    if (
+      data &&
+      data.startsWith('https://qr-code-video-play-poc.herokuapp.com/video/')
+    ) {
+      const [_key, slug] = data.split(
+        'https://qr-code-video-play-poc.herokuapp.com/video/'
+      );
+      if (slug) {
+        history.push('/video/' + slug);
+      }
     }
   };
   const handleError = (err) => {
