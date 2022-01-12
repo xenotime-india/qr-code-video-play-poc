@@ -7,7 +7,7 @@ import { ContentfulClient, ContentfulProvider } from 'react-contentful';
 
 const contentfulClient = new ContentfulClient({
   accessToken: process.env.REACT_APP_CONTENTFUL_DELIVERY_API_KEY,
-  space: REACT_APP_CONTENTFUL_SPACE_ID,
+  space: process.env.REACT_APP_CONTENTFUL_SPACE_ID,
 });
 
 ReactDOM.render(
