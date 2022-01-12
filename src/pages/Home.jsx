@@ -19,13 +19,17 @@ export default function Home() {
   };
   return (
     <div class="bg-slate-400 grid h-screen grid-cols-1 gap-4 justify-items-center p-10 items-center">
-      <div className="max-w-md w-72">
+      <div className="max-w-md w-72 relative anim-box p-2">
+        <div></div>
         <QrReader
           delay={300}
           onError={handleError}
           onScan={handleScan}
           style={{ width: '100%' }}
         />
+        <div class="diode">
+          <div class="laser"></div>
+        </div>
       </div>
     </div>
   );
