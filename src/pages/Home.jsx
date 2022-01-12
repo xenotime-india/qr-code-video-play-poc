@@ -18,7 +18,7 @@ export default function Home() {
     console.error(err);
   };
   return (
-    <div class="bg-slate-400 grid h-screen grid-cols-1 gap-4 justify-items-center p-10 items-center">
+    <div class="bg-gray-800 grid h-screen grid-cols-1 gap-4 justify-items-center p-10 items-center">
       <div className="max-w-md w-72 relative anim-box p-2">
         <div></div>
         <QrReader

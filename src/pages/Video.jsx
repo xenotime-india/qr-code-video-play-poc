@@ -23,7 +23,7 @@ export default function Video(props) {
   // See the Contentful query response
   console.debug(data);
   return (
-    <div>
+    <div className="bg-gray-800 text-slate-300">
       <h2 className="font-semibold text-lg text-center p-5">
         {data?.fields?.title}
       </h2>
